@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hotel Reservation System</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="page.js"></script>
+    <script type="text/javascript" src="reservationSupport.js"></script>
+
+</head>
+
+<body>
+    <div class="body">
+        <div class="upperbody">
+            <div class="form">
+                <form action="/action_page.php">
+                <div class="inside-form">
+				  <label for="fname">Your Name:</label><br>
+				  <label for="lname">Phone:</label><br>
+				 </div>
+				 <div class="inside-form">
+				  <input type="text" id="name" oninput="myFunction()"><br>
+				  <input type="number" id="phone" oninput="myFunction1()"><br>
+				</div>
+				<div class="inside-form">
+				  <label for="lname">Start Date:</label><br>
+				  <label for="lname">End Date:</label><br>
+				</div>
+				<div class="inside-form">
+				  <input type="date" id="startdate" oninput="myFunction2()"><br>
+				  <input type="date" id="enddate" oninput="myFunction3()"><br>
+				</div>
+				<div class="inside-form">
+				  <label for="lname">Adults</label><br>
+				  <label for="lname">Child</label><br>
+				</div>
+				<div class="inside-form">
+				  <input type="number" id="adult" oninput="myFunction4()"><br>
+				  <input type="number" id="child" oninput="myFunction5()"><br>
+				</div>
+				</form> 
+            </div>
+            <div class="display-form">
+               <div class="details">
+               <h2> Reservation Details</h2>
+               <hr>
+               <hr>
+               Name:<span id="name1"></span><br>
+               Phone: <span id="phone1"></span><br>
+               Children Count: <span id="child1"></span><br>
+               Adult Count: <span id="adult1"></span><br>
+               Start Date: <span id="sdate1"></span><br>
+               End Date: <span id="edate1"></span><br>
+               <hr>
+               <hr>
+               <br>
+           </div>
+               <BUTTON id="confirm" onclick="confirm()">Confirm Reservation</BUTTON>
+
+
+            </div>
+        </div>
+
+            <div class="lowerbody">
+                <div class="display-grid">
+                    <table id =table>
+                    	<tr>
+                    	<th>Name</th>
+                    	<th>Phone<br>Number</th>
+                    	<th>Adult <br>Count</th>
+                    	<th>Child <br> Count</th>
+                    	<th>startDate</th>
+                    	<th>EndDate</th>
+                    	<th>SubTotal</th>
+                    	<th>Tax</th>
+                    	<th>Total</th>
+                    </tr>
+                    </table>
+                   </div>
+                <div class="statistics">
+                       No of Reservation: <span id="reserve"></span><br>
+		               Average of Reservations: <span id="avg"></span><br>
+		               Total Number of UnderAge Customers: <span id="tccount"></span><br>
+		               Total Number of Adults: <span id="tacount"></span><br>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

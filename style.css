@@ -1,0 +1,50 @@
+
+.upperbody{
+	padding-top: 2%;
+	display: flex;
+	flex-wrap: wrap;
+	min-height: 50%;
+	max-width: 100%;
+	justify-content: space-between;
+}
+
+.lowerbody{
+	margin-top: 3%;
+	padding-bottom: 2%;
+	display: flex;
+	flex-wrap: wrap;
+	min-height :50%;
+	max-width :100%;
+	justify-content: space-between;
+}
+
+.form,.display-form,.display-grid,.statistics{
+	min-width: 45%;
+	height: 100%;
+	padding: 2%;
+}
+
+.form,.display-form{
+	background-color: #90ee90;
+}
+
+.statistics{
+	background-color: #FFB6C1;
+
+}
+
+.display-grid{
+	/*background-color: #FFFF99;*/
+}
+
+
+#submit{
+	margin-left: 18px;
+}
+.inside-form{
+	margin-top: 2px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
